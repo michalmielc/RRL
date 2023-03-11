@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{916CABE6-521F-4758-AAAE-BFC1728DF4FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RRL</RootNamespace>
+    <AssemblyName>RRL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>RRL.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="currentlyData.cs" />
+    <Compile Include="currentlyEditSupplier.cs" />
+    <Compile Include="currentlyEditCubby.cs" />
+    <Compile Include="currentlyEditUserGroup.cs" />
+    <Compile Include="currentlyEditUser.cs" />
+    <Compile Include="currentlyCostCenter.cs" />
+    <Compile Include="currentlyItem.cs" />
+    <Compile Include="currentlySession.cs" />
+    <Compile Include="editCostCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCostCenter.Designer.cs">
+      <DependentUpon>editCostCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editStorageplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editStorageplace.Designer.cs">
+      <DependentUpon>editStorageplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editSupplier.Designer.cs">
+      <DependentUpon>editSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editItem.Designer.cs">
+      <DependentUpon>editItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editUserGroup.Designer.cs">
+      <DependentUpon>editUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editUser.Designer.cs">
+      <DependentUpon>editUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kotrolkaPolaczenia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kotrolkaPolaczenia.Designer.cs">
+      <DependentUpon>kotrolkaPolaczenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lokalizacja.cs" />
+    <Compile Include="oknoAdministracja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoAdministracja.Designer.cs">
+      <DependentUpon>oknoAdministracja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoEditFillWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoEditFillWithdraw.Designer.cs">
+      <DependentUpon>oknoEditFillWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoFillWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoFillWithdraw.Designer.cs">
+      <DependentUpon>oknoFillWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoCostCenters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoCostCenters.Designer.cs">
+      <DependentUpon>oknoCostCenters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoSupplier.Designer.cs">
+      <DependentUpon>oknoSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoItems.Designer.cs">
+      <DependentUpon>oknoItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoLogowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoLogowanie.Designer.cs">
+      <DependentUpon>oknoLogowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoMenu.Designer.cs">
+      <DependentUpon>oknoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoReports.Designer.cs">
+      <DependentUpon>oknoReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoUsergroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoUsergroup.Designer.cs">
+      <DependentUpon>oknoUsergroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoUsers.Designer.cs">
+      <DependentUpon>oknoUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oknoWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oknoWarehouse.Designer.cs">
+      <DependentUpon>oknoWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="polaczenieBazaDanych.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="storageplace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="storageplace.Designer.cs">
+      <DependentUpon>storageplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zmianaNazwy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zmianaNazwy.Designer.cs">
+      <DependentUpon>zmianaNazwy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zmianaRozmiaru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zmianaRozmiaru.Designer.cs">
+      <DependentUpon>zmianaRozmiaru.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="editCostCenter.resx">
+      <DependentUpon>editCostCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editStorageplace.resx">
+      <DependentUpon>editStorageplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editSupplier.resx">
+      <DependentUpon>editSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editItem.resx">
+      <DependentUpon>editItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editUserGroup.resx">
+      <DependentUpon>editUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editUser.resx">
+      <DependentUpon>editUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kotrolkaPolaczenia.resx">
+      <DependentUpon>kotrolkaPolaczenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoAdministracja.resx">
+      <DependentUpon>oknoAdministracja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoEditFillWithdraw.resx">
+      <DependentUpon>oknoEditFillWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoFillWithdraw.resx">
+      <DependentUpon>oknoFillWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoCostCenters.resx">
+      <DependentUpon>oknoCostCenters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoSupplier.resx">
+      <DependentUpon>oknoSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoItems.resx">
+      <DependentUpon>oknoItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoLogowanie.resx">
+      <DependentUpon>oknoLogowanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoMenu.resx">
+      <DependentUpon>oknoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoReports.resx">
+      <DependentUpon>oknoReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoUsergroup.resx">
+      <DependentUpon>oknoUsergroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoUsers.resx">
+      <DependentUpon>oknoUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oknoWarehouse.resx">
+      <DependentUpon>oknoWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storageplace.resx">
+      <DependentUpon>storageplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zmianaNazwy.resx">
+      <DependentUpon>zmianaNazwy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zmianaRozmiaru.resx">
+      <DependentUpon>zmianaRozmiaru.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dataBaseFiles\rrl_02042019.bak" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dataBaseFiles\kopia_create02042019.sql" />
+    <Content Include="Icon1.ico" />
+    <Content Include="license\date.txt" />
+    <Content Include="license\licencja.txt" />
+    <Content Include="logs\logs.txt" />
+    <Content Include="settings\autologoffconfig.txt" />
+    <Content Include="settings\sql.txt" />
+    <Content Include="dataBaseFiles\KOPIA_BAZY.txt" />
+    <None Include="Resources\znak_zapyt.png" />
+    <None Include="Resources\ok_icon1.png" />
+    <None Include="Resources\ok_icon.png" />
+    <None Include="Resources\user_remove.png" />
+    <None Include="Resources\user_edit.png" />
+    <None Include="Resources\user_add.png" />
+    <None Include="Resources\logowanie.png" />
+    <None Include="Resources\raporty_1.png" />
+    <None Include="Resources\raporty_0.png" />
+    <None Include="Resources\magazyn_1.png" />
+    <None Include="Resources\magazyn_0.png" />
+    <None Include="Resources\grupy_1.png" />
+    <None Include="Resources\grupy_0.png" />
+    <None Include="Resources\artykuly_1.png" />
+    <None Include="Resources\artykuly_0.png" />
+    <None Include="Resources\user_1.png" />
+    <None Include="Resources\user_0.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\wyloguj_11.png" />
+    <None Include="Resources\wyloguj_01.png" />
+    <None Include="Resources\wyloguj_1.png" />
+    <None Include="Resources\wyloguj_0.png" />
+    <None Include="Resources\administracja_1.png" />
+    <None Include="Resources\administracja_0.png" />
+    <None Include="Resources\przyjecie_1.png" />
+    <None Include="Resources\przyjecie_0.png" />
+    <None Include="Resources\pobranie_1.png" />
+    <None Include="Resources\pobranie_01.png" />
+    <None Include="Resources\brembo.jpg" />
+    <None Include="Resources\item_add.png" />
+    <None Include="Resources\item_edit.png" />
+    <None Include="Resources\item_remove.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\ikona_xls.jpg" />
+    <None Include="Resources\ikona_xls1.jpg" />
+    <None Include="Resources\del_icon.png" />
+    <None Include="Resources\del_icon1.png" />
+    <None Include="Resources\icona_xls.png" />
+    <None Include="pics\mpk_0.png" />
+    <None Include="pics\mpk_1png.png" />
+    <None Include="pics\DOSTAWCY0.png" />
+    <None Include="pics\INWENTARYZACJA0.png" />
+    <None Include="pics\DOSTAWCY1.png" />
+    <None Include="pics\INWENTARYZACJA1.png" />
+    <Content Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

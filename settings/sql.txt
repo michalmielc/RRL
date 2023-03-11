@@ -1,0 +1,1 @@
+﻿Data Source=DESKTOP-ER50C2B\SQLEXPRESS;Initial Catalog=rrl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
